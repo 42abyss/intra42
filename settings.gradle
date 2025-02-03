@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        google {
+            content {
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+rootProject.name = "Intra42"
+include ":app"
